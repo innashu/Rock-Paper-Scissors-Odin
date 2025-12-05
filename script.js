@@ -8,11 +8,23 @@
         } else {
             return "Scissors";
         }
-
     }
         console.log(getComputerChoice());
 
+    function getHumanChoice() {
+        let choice = prompt("Rock, Paper, Scissors? Choose One!");
+        choice = choice.toLowerCase();
 
+        if (choice === "rock") {
+            return "Rock";
+        } else if (choice === "paper") {
+            return "Paper";
+        } else if (choice === "scissors") {
+            return "Scissors";
+        } 
+    }
+
+    console.log(getHumanChoice());
 
 
 
