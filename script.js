@@ -64,8 +64,7 @@
                 let humanChoice = getHumanChoice();
                 let computerChoice = getComputerChoice();
 
-                console.log(capitalize(humanChoice));
-                console.log(capitalize(computerChoice));
+                console.log(`You chose ${capitalize(humanChoice)}, Computer chose ${capitalize(computerChoice)}`);
 
                 let result = playRound(humanChoice, computerChoice);
                 console.log(result);
