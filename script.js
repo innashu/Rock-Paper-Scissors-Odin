@@ -47,13 +47,13 @@
             }
 
             resultDiv.textContent =
-                'You chose ${humanChoice}. Computer chose ${computerChoice}. ${message} ' +
-                'Score: You ${humanScore} - Computer ${computerScore}';
+            `You chose ${humanChoice}. Computer chose ${computerChoice}. ${message}
+            Score: You ${humanScore} - Computer ${computerScore}`;
 
             scoreDiv.textContent = `Score: You ${humanScore} - Computer ${computerScore}`;
 
             if (humanScore === 5 || computerScore === 5) {
-                resultDiv.textContent = humanScore = 5
+               resultDiv.textContent = humanScore === 5
                 ? "You Won The Game!"
                 : "You Lost the Game";
 
@@ -69,6 +69,6 @@
                     const computerChoice = getComputerChoice();
                     playRound(humanChoice, computerChoice);
          });
+
+         playGame();
   });
-}
-  
